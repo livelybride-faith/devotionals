@@ -4,12 +4,18 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Hello, my name is Michelle, I'm a follower of Jesus Christ. 
 
-### Contact me
+> Sometimes people confuse truth as rudeness and lies as politeness.
 
-[email@domain.com](mailto:email@domain.com)
+It is strange,
+to think that I’ve learned what it meant in the past,
+only to learn again that I did not fully understand.
+I wonder how much more there is to learn and to break,
+only to find out more that there is more.
+
+### Buy me a coffee 
+[![PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.com/paypalme/MichelleYeow)
+
