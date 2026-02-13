@@ -9,7 +9,11 @@
 
   <body>
     <div class="hydejack-wrapper">
-      
+      <button class="menu-toggle" aria-label="Toggle Menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </button>
       <aside class="sidebar">
         <div class="sidebar-inner">
           <header class="masthead">
@@ -20,7 +24,7 @@
             </div>
 
             <nav>
-              <a href="{{ site.baseurl }}/">Blog</a>
+              <a href="{{ site.baseurl }}/">Posts</a>
               <a href="{{ site.baseurl }}/about">About</a>
             </nav>
           </header>
@@ -42,7 +46,18 @@
     </div>
 
     {% include analytics.html %}
-    
+    <script>
+      document.querySelector('.menu-toggle').addEventListener('click', function() {
+        document.body.classList.toggle('nav-open');
+      });
+
+      // Close menu when clicking a link
+      document.querySelectorAll('.sidebar nav a').forEach(link => {
+        link.addEventListener('click', () => {
+          document.body.classList.remove('nav-open');
+        });
+      });
+    </script>
     <script>
       var refTagger = {
         settings: {

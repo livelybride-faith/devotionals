@@ -211,3 +211,68 @@ a {
     text-decoration: underline;
   }
 }
+
+// MENU TOGGLE BUTTON (Hidden on Desktop)
+.menu-toggle {
+  display: none;
+  z-index: 1000;
+  cursor: pointer;
+  background: $deep-violet;
+  border: 1px solid $electric-purp;
+  box-shadow: 0 0 10px rgba($electric-purp, 0.5);
+  padding: 10px;
+  border-radius: 8px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 0 20px $electric-purp;
+    transform: scale(1.05);
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: $white;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+
+  @media (max-width: 850px) {
+    display: block;
+  }
+}
+
+// RESPONSIVE SIDEBAR OVERRIDES
+@media (max-width: 850px) {
+  .sidebar {
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 280px; // Slightly narrower for mobile drawer feel
+    height: 100vh;
+    transform: translateX(-100%); // Hidden by default
+    transition: transform 0.4s cubic-bezier(0.77,0.2,0.05,1.0);
+    box-shadow: 5px 0 15px rgba(0,0,0,0.3);
+  }
+
+  // State when menu is open
+  .nav-open .sidebar {
+    transform: translateX(0);
+  }
+
+  // Optional: Animate hamburger to X when open
+  .nav-open .menu-toggle {
+    .bar:nth-child(1) { transform: rotate(-45deg) translate(-5px, 6px); }
+    .bar:nth-child(2) { opacity: 0; }
+    .bar:nth-child(3) { transform: rotate(45deg) translate(-5px, -6px); }
+  }
+  
+  // Prevent main content from scrolling when menu is open
+  body.nav-open {
+    overflow: hidden;
+  }
+}
