@@ -276,3 +276,35 @@ a {
     overflow: hidden;
   }
 }
+
+// EXTERNAL LINKS (GitHub & Stoat)
+.external-links {
+  margin-top: 30px;
+  border-top: 1px solid rgba($white, 0.1);
+  padding-top: 20px;
+
+  .social-link {
+    display: flex;
+    align-items: center;
+    color: $text-muted;
+    text-decoration: none;
+    font-size: 15px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+
+    svg { 
+      margin-right: 12px; 
+      fill: $text-muted;
+      transition: all 0.3s ease;
+    }
+
+    &:hover {
+      color: $white;
+      svg { 
+        fill: $white; 
+        filter: drop-shadow(0 0 5px $electric-purp);
+        transform: scale(1.1);
+      }
+    }
+  }
+}
