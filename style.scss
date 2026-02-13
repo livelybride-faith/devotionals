@@ -190,7 +190,7 @@ a {
     // The Arrow Drawing
     border-right: 4px solid $electric-purp;
     border-bottom: 4px solid $electric-purp;
-    transform: translateX(-50%) rotate(45deg);
+    transform: translateX(-50%) rotate(90deg);
     
     animation: bounce-glow 2s infinite ease-in-out;
     pointer-events: none; // Ensures it doesn't block clicks
