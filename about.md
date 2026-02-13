@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-### More Information
+### A little about me
 
 Hello, my name is Michelle, I'm a follower of Jesus Christ. 
 
