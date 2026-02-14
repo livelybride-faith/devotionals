@@ -16,9 +16,6 @@ only to learn again that I did not fully understand.
 I wonder how much more there is to learn and to break,
 only to find out there is more.
 
-### Buy me a coffee 
-[![PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.com/paypalme/MichelleYeow)
-
 ### Copyrights
 > Kindly mention the source such as below or [![PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.com/paypalme/MichelleYeow) or both if you're feeling generous! Thank you!
 
