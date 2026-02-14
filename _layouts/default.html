@@ -27,7 +27,9 @@
               <a href="{{ site.baseurl }}/">Posts</a>
               <a href="{{ site.baseurl }}/about">About</a>
               {% for book in site.data.bible %}
-                <a class="menu-tag" href="{{ site.baseurl }}/tag.html?t={{ book.tag }}">{{ book.name }}</a>
+                <a class="menu-tag" href="{{ site.baseurl }}/tag/{{ book.tag }}/">
+                  {{ book.name }}
+                </a>
               {% endfor %}
             </nav>
             
