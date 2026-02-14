@@ -20,7 +20,7 @@ only to find out there is more.
 [![PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.com/paypalme/MichelleYeow)
 
 ### Copyrights
-Kindly mention the source such as below or [![PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.com/paypalme/MichelleYeow) or both if you're feeling generous! Thank you!
+> Kindly mention the source such as below or [![PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.com/paypalme/MichelleYeow) or both if you're feeling generous! Thank you!
 
 #### Citation Example : 
 > Author : Michelle Yeow <br/>
@@ -28,7 +28,5 @@ Kindly mention the source such as below or [![PayPal](https://img.shields.io/bad
 > Source : which ever URL you share from this site.
 
 ### Monetization
-> [!IMPORTANT]
 > Kindly contact me at [Stoat.Chat server](https://stt.gg/3vTTwtM8) or [email me](rescuer_twelve2s@icloud.com) if the sharing involved any kind of monetization. 
 
-This site was built using [GitHub Pages](https://pages.github.com/) and [Jekyll-now](https://github.com/barryclark/jekyll-now).
