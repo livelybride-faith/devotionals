@@ -1,18 +1,19 @@
 ---
-layout: tag
+layout: default # Or whatever layout wraps your site
+title: Tagged Posts
 pagination:
   enabled: true
   data: site.data.bible
   permalink: /tag/:tag/
-  collection: posts
 ---
-<h1>Posts tagged with "{{ pagination.data.tag }}"</h1>
+
+<h1>Posts tagged with "{{ pagination.page.tag }}"</h1>
 
 <ul class="posts">
-  {% for post in site.tags[pagination.data.tag] %}
+  {% for post in site.tags[pagination.page.tag] %}
     <li>
       <span>{{ post.date | date_to_string }}</span> &raquo; 
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
   {% endfor %}
 </ul>
