@@ -1,25 +1,18 @@
 ---
-layout: default
+layout: tag
+pagination:
+  enabled: true
+  data: site.data.bible
+  permalink: /tag/:tag/
+  collection: posts
 ---
+<h1>Posts tagged with "{{ pagination.data.tag }}"</h1>
 
-<h1>Posts tagged with "<span class="tag-name"></span>"</h1>
-
-<ul class="posts-list">
-  {% for post in site.posts %}
-    {% if post.tags contains page.tag_name %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endif %}
+<ul class="posts">
+  {% for post in site.tags[pagination.data.tag] %}
+    <li>
+      <span>{{ post.date | date_to_string }}</span> &raquo; 
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </li>
   {% endfor %}
 </ul>
-
-<script>
-  // Get tag from URL parameter
-  const urlParams = new URLSearchParams(window.location.search);
-  const tag = urlParams.get('t');
-  if (tag) {
-    document.querySelector('.tag-name').innerText = tag;
-  }
-</script>
